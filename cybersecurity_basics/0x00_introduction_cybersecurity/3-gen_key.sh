@@ -1,2 +1,2 @@
 #!/bin/bash
-ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa_4096
+ssh-keygen -t rsa -b 4096 -f "$1" -N "" # script generates SSH key pair using the RSA algorithm with a specific strength
