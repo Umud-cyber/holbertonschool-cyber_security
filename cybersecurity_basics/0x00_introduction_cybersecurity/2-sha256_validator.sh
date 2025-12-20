@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(sha256sum "$1" | cut -d' ' -f1)  $1" | sha256sum -c -
+ssh-keygen -t rsa -b 4096 -f "$1" -N "" # script generates SSH key pair using the RSA algorithm with a specific strength
