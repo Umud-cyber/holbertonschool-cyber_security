@@ -1,2 +1,2 @@
 #!/bin/bash
-nmap -sV -A --script "banner,ssl-enum-ciphers,default,smb-enum-domains" "$1" -oN service_enumeration_results.txt
+nmap -sV --script "http-vuln*,mysql-vuln*,ftp-vuln*,smtp-vuln*" "$1" -oN vulnerability_scan_results.txt
